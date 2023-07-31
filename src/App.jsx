@@ -20,10 +20,6 @@ function App() {
 
   const [locateUserDelete, setLocateUserDelete] = useState(null)
 
- 
-  
-
-
   const showUsers = () => {
     axios
     .get(`https://users-crud.academlo.tech/users/`)

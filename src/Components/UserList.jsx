@@ -1,6 +1,6 @@
-import axios from "axios";
-import React from "react";
-const UserList = ({userList, setFormAdd, userData, showUsers, sendMsgBoxWindow}) => {
+
+
+const UserList = ({userList, setFormAdd, userData, sendMsgBoxWindow}) => {
 
     const alphabeticalList = userList.sort((a, b) => a.first_name.localeCompare(b.first_name))
 
