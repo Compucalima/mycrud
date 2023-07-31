@@ -180,12 +180,17 @@ header img {
 }
 
 .fa-circle-xmark {
+    cursor: pointer;
     font-size: 30px;
     text-align: center;
     border-radius: 30px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
     transition: background-color 0.8s ease;
     color: #fc4c4c;
+    transition: transform 0.7s ease;
+}
+.fa-circle-xmark:hover {
+    
+    transform: scale(1.12);
 }
 
 
@@ -331,18 +336,16 @@ header img {
     font-weight: bold;
 }
 footer {
-    position: relative;
+    
     height: 63px;
-    width: 100%;
+    
     
     background-color:rgb(11, 90, 247);
     padding: 5px;
     text-align: center;
     color: white;
     letter-spacing: 1px;
-    bottom: 0;
-    font-size: 14px;
     
-    
+    font-size: 14px; 
 }
 

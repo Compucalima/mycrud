@@ -54,7 +54,7 @@ const UsersForm = ({setFormAdd, showUsers, userSelection, setUserSelection}) => 
             <div className="register__form">
                 <i onClick={() => formDataClose()} className="fa-solid fa-circle-xmark"></i>
                 
-                <h2>Nuevo usuario</h2>
+                <h2>{userSelection ? "Actualizar usuario" : "Agregar usuario"}</h2>
                 
                 <form onSubmit={handleSubmit(submit)}>
                     <p>Nombre</p>
