@@ -21,20 +21,22 @@ function App() {
   const [onLoad, setOnLoad] = useState(true)
 
   
-  useEffect(() => {
-    showUsers()
-  },[])
+
 
   const showUsers = () => {
     axios
     .get(`https://users-crud.academlo.tech/users/`)
-    .then(res => {
+    .then((res) => {
       setUserList(res.data)
       setOnLoad(false)
     })
     .catch((error) => console.error(error)); 
 
   }
+
+  useEffect(() => {
+    showUsers()
+  },[])
 
   const userData = (user) => {
     setFormAdd(true)
