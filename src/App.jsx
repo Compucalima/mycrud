@@ -8,6 +8,8 @@ import OnLoad from './Components/OnLoad'
 
 function App() {
 
+  const [onLoad, setOnLoad] = useState(true)
+
   const [formAdd, setFormAdd] = useState(false)
 
   const [userList, setUserList] = useState([])
@@ -18,8 +20,7 @@ function App() {
 
   const [locateUserDelete, setLocateUserDelete] = useState(null)
 
-  const [onLoad, setOnLoad] = useState(true)
-
+ 
   
 
 
